@@ -27,7 +27,7 @@ jobs:
       - name: Add GitLab remote
         run: |
           git remote add gitlab \
-            https://oauth2:${{ secrets.GITLAB_TOKEN }}@https://gitlab.com/alpha5650328/jenkins.git
+            https://oauth2:${{ secrets.GITLAB_TOKEN }}@https://gitlab.com/alpha5650328/gitsync.git
       # 4. Push **all** branches and tags to GitLab
       - name: Mirror push to GitLab
         run: git push --all gitlab && git push --tags gitlab
